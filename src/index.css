@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent: #22d3ee;
+  --accent-dim: #22d3ee55;
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  background: #000;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* compact scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0b;
+}
+::-webkit-scrollbar-thumb {
+  background: #2e2e33;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* number inputs without spinners */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+/* range fallback */
+input[type='range'] {
+  -webkit-appearance: none;
+  background: transparent;
+}
+
+/* selection */
+::selection {
+  background: var(--accent);
+  color: #000;
+}
+
+/* suppress default focus outlines except keyboard */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* native select dropdown dark */
+select option {
+  background: #18181b;
+  color: #f4f4f5;
+}
