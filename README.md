@@ -1,5 +1,7 @@
 # VJ Studio — Visual Performance Tool
 
+**🟢 EN VIVO: https://gabrielyuvone.github.io/arena/**
+
 Aplicación web completa para VJing en tiempo real. Construida con **Vite + React + TypeScript +
 Tailwind CSS + Zustand + WebGL + Web Audio + Web MIDI**. Sin backend: los proyectos se guardan en
 **IndexedDB** y se exportan/importan como **JSON**.
@@ -14,6 +16,16 @@ Tailwind CSS + Zustand + WebGL + Web Audio + Web MIDI**. Sin backend: los proyec
 npm install
 npm run dev        # http://localhost:5173
 npm run build      # build de producción en dist/
+```
+
+### Deploy (GitHub Pages)
+
+La rama `gh-pages` contiene el build estático y publica automáticamente en
+`https://gabrielyuvone.github.io/arena/`. Para actualizar:
+
+```bash
+npm run build
+# copiar dist/* a la rama gh-pages y hacer push
 ```
 
 ---
